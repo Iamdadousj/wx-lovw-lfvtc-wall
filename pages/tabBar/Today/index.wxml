@@ -1,0 +1,20 @@
+<import src="template-content-list.wxml" />
+<import src="template-zt-list.wxml" />
+        <scroll-view enable-back-to-top scroll-top="{{scrollTop}}" style="width:100%;height: 100%;" scroll-y="true"   class="module-content"  bindscroll="scroll" bindscrolltolower= "scrolltolower">
+<view id="app">
+  <swiper class="swiper-container" indicator-active-color='#ccc'  indicator-dots="true" circular='false' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+
+    <block wx:for="{{das}}" wx:for-item="tomg" wx:key="objectId">
+      <swiper-item class="swiper-item">
+        <image src="{{tomg.img}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+          <template is="content-list" data="{{contentList}}" />
+          <view class="tips">
+            @临职小电哥 与你倾心相遇
+          </view>
+</view>
+
+</scroll-view>

@@ -1,0 +1,196 @@
+#app {
+  border-top: 1px solid #fafafa;
+}
+
+#app form {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 60rpx 40rpx 0;
+}
+.weui-uploader__file {
+padding: 60rpx 70rpx;
+margin: 0 auto;
+}
+#app form .txt-title {
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  border-bottom: 1px solid #fafafa;
+}
+
+#app form .input-title {
+  float: right;
+  width: 80%;
+  font-size: 26rpx;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 2rpx;
+}
+
+.clearfix {
+  clear: both;
+}
+
+#app form .input-class {
+  font-size: 26rpx;
+  color: #b2b2b2;
+  height: 102rpx;
+  line-height: 102rpx;
+  font-family: -apple-system,
+                 BlinkMacSystemFont,
+                 'PingFang SC',
+                 'Hiragino Sans GB',
+                 'Microsoft YaHei',
+                 sans-serif;
+}
+
+#app form .nr-dh-con {
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+
+#app form .textarea {
+  width: 100%;
+  font-size: 30rpx;
+  letter-spacing: 3rpx;
+  display: block;
+  color: #b2b2b2;
+  border-bottom: 1px solid #fafafa;
+  height: 400rpx !important;
+  line-height: 46rpx;
+  padding-top: 26rpx;
+  -webkit-border-radius: 5rpx;
+  -moz-border-radius: 5rpx;
+  border-radius: 5rpx;
+}
+
+#app form .upload-image {
+  width: 128rpx;
+  height: 128rpx;
+  display: inline-block;
+  -webkit-border-radius: 15rpx;
+  -moz-border-radius: 15rpx;
+  border-radius: 15rpx;
+  margin-right: 10rpx;
+}
+
+#app form .btn-upload {
+  width: 128rpx;
+  display: inline-block;
+  background-color: #fafafa;
+  height: 128rpx;
+  text-align: center;
+  line-height: 128rpx;
+  margin: 24rpx 0 0 0;
+  padding: 0;
+  color: #e6e6e6;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#app form .button-hover {
+  background-color: #ccc;
+  color: white;
+}
+
+#app form .tip {
+  color: #000;
+}
+
+#app form .switch-view {
+  color: #b2b2b2;
+  font-size: 26rpx;
+  margin-top: 48rpx;
+}
+
+#app form .switch-view switch {
+ 
+}
+.line-wx-h{
+   height: 50rpx;
+}
+.line-wx-h>view{
+float:left;
+line-height:50rpx;
+width:48%;
+
+}
+.wx-switch-input {
+  width: 42px !important;
+  height: 20px !important;
+}
+
+.wx-switch-input::before {
+  width: 41px !important;
+  height: 20px !important;
+}
+
+.wx-switch-input::after {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+button::after {
+  border: none;
+}
+#app form .btn-group{
+margin-top: 60rpx;
+}
+#app form .btn-group .btn-reset {
+  float: right;
+  background-color: #fff;
+  height: 39rpx;
+  line-height: 39rpx;
+  font-size: 26rpx;
+  text-align: center;
+  color: RGB(0, 0, 255);
+  transition: all 0.15s;
+}
+
+#app form .btn-reset {
+  margin-right: 5rpx;
+}
+
+#app form .btn-fb {
+  margin-top: 100rpx;
+  margin-bottom: 60rpx;
+}
+
+#app form .btn-fb button {
+  height: 84rpx;
+  line-height: 84rpx;
+  font-size: 34rpx;
+  background: RGB(220, 20, 60);
+  color: #fff;
+  margin: 0 60rpx;
+}
+
+#app form .btn-active {
+  color: blue;
+}
+
+#pao-gd {
+  height: 55rpx;
+  line-height: 55rpx;
+  background-color: RGB(255, 240, 245);
+}
+
+#pao-gd .swiper_item {
+  font-size: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.tz {
+  width: 35rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin: 0rpx 28rpx;
+}
