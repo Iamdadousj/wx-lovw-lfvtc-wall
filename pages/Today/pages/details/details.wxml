@@ -10,13 +10,14 @@
 				</view>
 			</view>
 			<view class="module-body">
-<view class='module-con-img'>			
-	<image style='clear:both' wx:for="{{order.contentImg}}" src="{{item}}" mode="widthFix"></image>
-  </view>
-        
+      
+<view class='module-con-img' wx:if="{{order.contentImg}}">			
+	<image style='clear:both' wx:for="{{order.contentImg}}" bindtap='dbbug' data-list="{{order.contentImg}}" data-src='{{item}}' wx:for-item="item"   src="{{item}}" mode="widthFix"></image>
+  </view>      
 				<text class="content">
 					{{order.content}}
 				</text>
+        <text class='txt-lt ft-25'>点击查看大图</text>
         <text style='clear:both'></text>
 			</view>
 			<view class="module-footer">
@@ -28,6 +29,7 @@
 					<icon class="icon icon-iconfontconment"></icon>
 					<text class="review-num">{{comments.length}}</text>
 				</view>
+       
 			</view>
 			<view class="after"></view>
 		</view>
@@ -60,10 +62,9 @@
 		</view>
 		<view class="{{isReview?'affix-bottom-active':''}} affix-bottom">
 			<form bindsubmit="commentSubmit">
-				<input type="text" placeholder="回复:" bindinput="commentInput" />
+				<input type="text" placeholder="回复:" bindconfirm='commentSubmit' bindinput="commentInput" />
 				<button class="btn-review" form-type="submit" hover-class="btn-active">发送</button>
 			</form>
-			
 		</view>
 	</view>
 </view>

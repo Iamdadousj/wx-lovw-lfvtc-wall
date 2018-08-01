@@ -13,7 +13,10 @@
   background-color: #fafafa;
   position: relative;
 }
-
+.ft-25{
+  font-size: 25rpx;
+  color: #c3c3c3;
+}
 #app .app-module .module-content .module-header .title {
   height: 76rpx;
   line-height: 76rpx;
@@ -152,7 +155,7 @@
 #app .app-module .btn-review-fixed {
   position: fixed;
   bottom: 100rpx;
-  right: 100rpx;
+  right: 46rpx;
   width: 100rpx;
   z-index: 100000;
   -webkit-border-radius: 50%;

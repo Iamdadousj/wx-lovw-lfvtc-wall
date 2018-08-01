@@ -56,6 +56,7 @@ Page({
         });
       }
       if(order.attributes.supportNum.length>0){
+       
         that.setData({
           support : order.attributes.supportNum,
           supportNum : order.attributes.supportNum.length
@@ -64,13 +65,13 @@ Page({
     });
     
   },
-  onShow:function(){
+  onShow(){
 
   },
-  onHide:function(){
+  onHide(){
     // 页面隐藏
   },
-  onUnload:function(){
+  onUnload(){
     // 页面关闭
   },
   commentInput: function(e){
@@ -96,12 +97,12 @@ Page({
       throw error;
     });
   },
-  handleReviewInput:function () {
+  handleReviewInput() {
     this.setData({
         isReview: true
     })
   },
-  handleSupport:function (e) { //点赞事件
+  handleSupport(e) { //点赞事件
     var _that = this;
     if(_that.data.support.length==0){
       addSupprt(_that);
@@ -119,11 +120,20 @@ Page({
     }
 
   },
-  onShareAppMessage: function () {
+  dbbug(e){
+    var src = e.currentTarget.dataset.src;
+    var imgList = e.currentTarget.dataset.list;
+    wx.previewImage({
+      current: src,
+      urls:imgList
+    });
+  },
+  onShareAppMessage () {
     return {
       title: '临职表白墙出明星了，电哥正在直播',
       imageUrl:'/image/heart.png',
-      path: '/pages/loveWall-details/loveWall-details?id=123'
+      path: '/pages/details/details?id=123',
+
     }
   }
 })

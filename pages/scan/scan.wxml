@@ -1,0 +1,31 @@
+
+<!-- <template name="scanInfo"> -->
+<view class="page-body" id='app'>
+<dialog id='dialog' 
+      title='临职小电哥授权提示' 
+      content='点击确定，按提示进入授权'    
+      confirmText='授权'
+      confirmfalse='取消'
+      bind:confirmEvent='confirmEvent'
+      bind:bindGetUserInfo='bindGetUserInfo'>
+</dialog>
+	<view class="app-main">
+		<view class="app-about">
+			<image src="/image/heart.png" class="ic-logo"></image>
+			<text class="titile">
+				临职表白墙 与你 不见不散
+			</text>
+		<view wx:if="{{canIUse}}" open-type="getUserInfo"
+bindgetuserinfo="bindGetUserInfo" bindtap='confirmEvent'> 
+点我授权
+</view>
+<view wx:else>请升级微信版本</view>
+			<text class="author">
+				 © 版权所有  临职小电哥
+			</text>
+		</view>
+		
+	</view>
+
+</view>
+<!-- </template> -->

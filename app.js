@@ -6,6 +6,7 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs);
+    // wx.clearStorageSync()
   },
   onShow:function () {
     AV.init({
@@ -23,11 +24,24 @@ App({
     }else{
       //调用登录接口
       wx.login({
-        success: function () {
+        success: res => {
           wx.getUserInfo({
-            success: function (res) {
+            success: res => {
               that.globalData.userInfo = res.userInfo
               typeof cb == "function" && cb(that.globalData.userInfo)
+            }, fail: err => {
+              wx.showModal({
+                title: '授权提示',
+                content: '您尚未对小电哥进行授权，点击我去页面授权登录使用吧！。',
+                success: function (res) {
+                  if (res.confirm) {
+                    console.log('用户点击确定')
+                    wx.navigateTo({
+                      url: '/pages/scan/scan?user_id=111',
+                    })
+                  }
+                }
+              })
             }
           })
         }

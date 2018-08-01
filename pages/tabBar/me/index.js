@@ -5,7 +5,7 @@ Page({
     userInfo: {},
     avatarUrl: "",
     userinfoList: [{
-        text: "我的表白",
+        text: "历史消息",
       icon: "../../../image/ic/ic-release.png",
         url: "../../me/pages/user-comment/user-comment"
       },

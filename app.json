@@ -2,7 +2,8 @@
   "pages": [
     "pages/tabBar/Today/index",
     "pages/tabBar/me/index",
-    "pages/tabBar/say/index"
+    "pages/tabBar/say/index",
+    "pages/scan/scan"
   ],
   "window": {
     "backgroundColor": "#eeeeee",
